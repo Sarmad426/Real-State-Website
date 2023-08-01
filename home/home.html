@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find apartments and houses for rent and permanent." />
+  <meta name="keywords" content="Houses, Apartments" />
+  <link rel="stylesheet" href="../../styles/home/styles.css" />
+  <link rel="icon" type="image/png" href="../../content/logos/app logo.svg" />
+  <title>Real Estate</title>
+</head>
+
+<body>
+
+  <!-- Parent Container -->
+
+  <main>
+
+    <!-- Navbar -->
+
+    <nav class="navbar flex">
+      <a href="" class="logo__styles">
+        <img src="../../content/logos/app logo.svg" alt="Home Logo" />
+        <span class="logo__text">
+          <h2 class="logo__heading">REIS</h2>
+          <p class="logo__desc">Real State</p>
+        </span>
+      </a>
+      <div class="navbar__links">
+        <a href="" class="link__styles">About us</a>
+        <a href="#properties" class="link__styles bold">Properties</a>
+        <a href="#gallery" class="link__styles">Gallery</a>
+        <a href="#contact-us" class="link__styles">Contact Us</a>
+        <a href="../signup/signup.html">
+          <button class="linear__btn2">Sign Up</button>
+        </a>
+        <a href="../login/login.html">
+          <button class="linear__btn1">Login</button>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section  -->
+
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__heading">Find Your Dream Home</h1>
+        </div>
+        <div class="hero__buttons">
+          <button class="primary__button">Rent</button>
+          <button class="hero__button__2">Sale</button>
+        </div>
+        <div class="hero__search__section">
+          <div class="search__section">
+            <label for="location" class="bold block">Locations</label>
+            <select name="location" id="location" class="select__box">
+              <option value="null">Select Your City</option>
+              <option value="Karachi">Karachi</option>
+              <option value="">Lahore</option>
+              <option value="">Islamabad</option>
+              <option value="">Peshawar</option>
+              <option value="">Queeta</option>
+              <option value="">Gilgit Baltistan</option>
+            </select>
+          </div>
+          <div class="search__section">
+            <label for="property-type" class="bold block">Property Type</label>
+            <select name="property-type" id="property-type" class="select__box">
+              <option value="null">Select Property Type</option>
+              <option value="Karachi">Studio apartments</option>
+              <option value="">One bedroom apartments</option>
+              <option value="">Two bedroom apartments</option>
+              <option value="">Three bedroom apartments</option>
+              <option value="">Four bedroom apartments</option>
+              <option value="">Five or more bedroom apartments/ houses</option>
+            </select>
+          </div>
+          <div class="search__section">
+            <label for="rent-range" class="bold block">Rent Range</label>
+            <select name="rent-range" id="rent-range" class="select__box">
+              <option value="null">Select rent range</option>
+              <option value="Karachi">$200-$500</option>
+              <option value="">$500-$1000</option>
+              <option value="">$1000-$5000</option>
+            </select>
+          </div>
+          <button class="primary__button">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties -->
+
+    <section class="properties">
+      <div class="properties__text">
+        <h1 class="properties__heading">Properties by Area</h1>
+        <p class="properties__desc">
+          Find Rooms, houses and apartments at very cheap prices on your desired
+          Location.
+        </p>
+      </div>
+      <div class="properties__grid">
+        <div class="grid__img grid__img1">
+          <h2 class="properties__img__heading">CenterVille</h2>
+          <p class="properties__img__listening">25 Listenings</p>
+        </div>
+        <div class="grid__img grid__img2">
+          <h2 class="properties__img__heading">CenterVille</h2>
+          <p class="properties__img__listening">25 Listenings</p>
+        </div>
+        <div class="grid__img grid__img3">
+          <h2 class="properties__img__heading">CenterVille</h2>
+          <p class="properties__img__listening">25 Listenings</p>
+        </div>
+      </div>
+      <div class="properties__grid2">
+        <div class="grid2__img grid2__img1">
+          <h2 class="properties__img__heading">Arlington</h2>
+          <p class="properties__img__listening">25 Listenings</p>
+        </div>
+        <div class="grid2__img grid2__img2">
+          <h2 class="properties__img__heading">CenterVille</h2>
+          <p class="properties__img__listening">25 Listenings</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Property Cards  -->
+
+    <section class="properties__cards">
+      <div class="properties__cards__text">
+        <h2 class="properties__cards__heading">Properties by Area</h2>
+        <p class="properties__cards__desc">
+          Get Commericial apartments from one room to 5 rooms.
+        </p>
+      </div>
+      <div class="property__cards">
+        <div class="property__card">
+          <img src="../../content/logos/icon.svg" alt="Home Icon" />
+          <h3 class="card__heading">Sell Your Home</h3>
+          <p>
+            We do a free evalutaion to make sure you want to sell your home.
+          </p>
+          <a href="" class="property__card__link">Read more</a>
+        </div>
+        <div class="property__card">
+          <img src="../../content/logos/icon1.svg" alt="Home Icon" />
+          <h3 class="card__heading">Rent Your Home</h3>
+          <p>We do a free evalutaion to make sure you want to start Renting.</p>
+          <a href="" class="property__card__link">Read more</a>
+        </div>
+        <div class="property__card">
+          <img src="../../content/logos/icon2.svg" alt="Home Icon" />
+          <h3 class="card__heading">Buy a Home</h3>
+          <p>We do a free evalutaion to make sure you want to Buy a home.</p>
+          <a href="" class="property__card__link">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Cards -->
+
+    <section class="home__cards" id="properties">
+      <h2 class="home__cards__heading">Latest Properties of Rent</h2>
+      <div class="cards">
+        <a href="../../html/details/detail1.html" class="card">
+          
+            <img src="../../content/images/img10.jpg" alt="home image" />
+          
+          <div class="card__content">
+            <h4 class="card__heading">92 Allium Place, orlando FL</h4>
+            <span class="card__price">$52,800</span>
+            <div class="card__details">
+              <div class="card__detail">
+                <img src="../../content/logos/car.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/bathtub.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/arrowsout.svg" alt="cars" />
+                <figcaption>20,9600 ft</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/sharenetwork.svg" alt="share">
+                <img src="../../content/logos/plus.svg" alt="Add">
+              </div>
+            <img src="../../content/logos/profile img.png" alt="Profile image" class="profile__img">
+
+            </div>
+          </div>
+        </a>
+
+        <a href="../../html/details/detail2.html" class="card">
+          <img src="../../content/images/img7.jpg" alt="home image" />
+          <div class="card__content">
+            <h4 class="card__heading">92 Allium Place, orlando FL</h4>
+            <span class="card__price">$52,800</span>
+            <div class="card__details">
+              <div class="card__detail">
+                <img src="../../content/logos/car.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/bathtub.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/arrowsout.svg" alt="cars" />
+                <figcaption>20,9600 ft</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/sharenetwork.svg" alt="share">
+                <img src="../../content/logos/plus.svg" alt="Add">
+              </div>
+            <img src="../../content/logos/profile logo.avif" alt="Profile image" class="profile__img">
+
+            </div>
+          </div>
+        </a>
+        <a href="../../html/details/detail3.html" class="card">
+          <img src="../../content/images/img8.jpg" alt="home image" />
+          <div class="card__content">
+            <h4 class="card__heading">92 Allium Place, orlando FL</h4>
+            <span class="card__price">$52,800</span>
+            <div class="card__details">
+              <div class="card__detail">
+                <img src="../../content/logos/car.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/bathtub.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/arrowsout.svg" alt="cars" />
+                <figcaption>20,9600 ft</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/sharenetwork.svg" alt="share">
+                <img src="../../content/logos/plus.svg" alt="Add">
+              </div>
+            <img src="../../content/logos/profile.jpg" alt="Profile image" class="profile__img">
+
+            </div>
+          </div>
+        </a>
+        <a href="../../html/details/detail4.html" class="card">
+          <img src="../../content/images/img14.jpg" alt="home image" />
+          <div class="card__content">
+            <h4 class="card__heading">92 Allium Place, orlando FL</h4>
+            <span class="card__price">$52,800</span>
+            <div class="card__details">
+              <div class="card__detail">
+                <img src="../../content/logos/car.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/bathtub.svg" alt="cars" />
+                <figcaption>4</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/arrowsout.svg" alt="cars" />
+                <figcaption>20,9600 ft</figcaption>
+              </div>
+              <div class="card__detail">
+                <img src="../../content/logos/sharenetwork.svg" alt="share">
+                <img src="../../content/logos/plus.svg" alt="Add">
+              </div>
+            <img src="../../content/logos/profile2.webp" alt="Profile image" class="profile__img">
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Gallery Cards -->
+
+    <section class="gallery__cards" id="gallery">
+      <div class="gallery__cards__text">
+        <h3 class="gallery__cards__heading">Latest Properties of Rent</h3>
+      </div>
+      <div class="gallery__cards__items">
+        <div class="gallery__card gallery__card1">
+          <div class="flex card__details">
+            <span>
+              <img src="../../content/logos/mappin.svg" alt="Map" />
+              <figcaption>Washington</figcaption>
+            </span>
+            <span>
+              <img src="../../content/logos/arrowsout4.svg" alt="Feets" />
+              <figcaption>12000</figcaption>
+            </span>
+          </div>
+        </div>
+        <div class="gallery__card gallery__card2">
+          <div class="flex card__details">
+            <span>
+              <img src="../../content/logos/mappin.svg" alt="Map" />
+              <figcaption>Washington</figcaption>
+            </span>
+            <span>
+              <img src="../../content/logos/arrowsout4.svg" alt="Feets" />
+              <figcaption>12000</figcaption>
+            </span>
+          </div>
+        </div>
+        <div class="gallery__card gallery__card3">
+          <div class="flex card__details">
+            <span>
+              <img src="../../content/logos/mappin.svg" alt="Map" />
+              <figcaption>Washington</figcaption>
+            </span>
+            <span>
+              <img src="../../content/logos/arrowsout4.svg" alt="Feets" />
+              <figcaption>12000</figcaption>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Form  -->
+
+    <section class="contact__us" id="contact-us">
+      <div>
+        <h3 class="contact__us__heading">Contact US</h3>
+        <p class="contact__us__desc">
+          Submit Your queries and feedback about our services and agents.
+        </p>
+      </div>
+      <form class="contact__us__form">
+        <h3>Enquiry Form</h3>
+        <p>
+          Are you looking for details about a certain property? Ask questions
+          using the form below.
+        </p>
+        <input type="text" name="first" placeholder="First Name" class="form__input" minlength="3" required
+          autocomplete="off" />
+        <input type="text" name="last" placeholder="Last Name" class="form__input" minlength="3" required
+          autocomplete="off" />
+        <input type="email" name="email" placeholder="Email id" class="form__input email__input" required
+          autocomplete="off" />
+        <label for="comments" class="bold">Comments or questions</label>
+        <textarea name="comments" id="comments" cols="96" rows="10" class="form__textarea" minlength="50"
+          maxlength="300" required>
+        </textarea>
+        <button class="submit__button" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="" class="logo__styles">
+          <img src="../../content/logos/app logo.svg" alt="Home Logo" />
+          <span class="logo__text">
+            <h2 class="logo__heading">REIS</h2>
+            <p class="logo__desc">Real State</p>
+          </span>
+        </a>
+        <div class="contact__details">
+          <h3 class="contact__details__heading">Contact Us</h3>
+          <p>Call: +25478294320</p>
+          <p>
+            Multan road lahore,<br />
+            Punjab Pakistan
+          </p>
+          <p>Email: Reis@mail.com</p>
+        </div>
+        <div class="social__logos">
+          <img src="../../content/logos/facebook.svg" alt="" />
+          <img src="../../content/logos/social-media-logo1.svg" alt="" />
+          <img src="../../content/logos/linkedin.svg" alt="" />
+          <img src="../../content/logos/be.svg" alt="" />
+          <img src="../../content/logos/instagram.svg" alt="" />
+        </div>
+      </div>
+      <div class="footer__item">
+        <h3 class="footer__heading">Features</h3>
+        <div class="footer__links">
+          <a href="" class="link__styles">Home</a><a href="../host/host.html" class="link__styles">Become a Host</a><a
+            href="" class="link__styles">Pricing</a><a href="" class="link__styles">Blog</a><a href="#contact-us"
+            class="link__styles">Contact</a>
+        </div>
+      </div>
+      <div class="footer__item">
+
+        <h3 class="footer__heading">Company</h3>
+        <div class="footer__links">
+          <a href="" class="link__styles">About</a><a href="" class="link__styles">Press</a><a href="#contact-us"
+            class="link__styles">Contact</a><a href="" class="link__styles">Blog</a><a href=""
+            class="link__styles">Careers</a>
+        </div>
+      </div>
+      <div class="footer__item">
+        <h3 class="footer__heading">Team and Policies</h3>
+        <div class="footer__links">
+          <a href="" class="link__styles">Terms and services</a><a href="" class="link__styles">Privacy Policy</a><a
+            href="" class="link__styles">Security</a </div>
+        </div>
+    </footer>
+  </main>
+
+</body>
+
+</html>
