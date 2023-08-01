@@ -1,0 +1,55 @@
+@import "../custom\ styles/variables";
+
+.product__details {
+  @include flex(flex-start, start);
+  gap: 70px;
+  @include margin(20px, 10px);
+  @include padding(10px, 20px);
+  .product__details__gallery {
+    .large__img {
+      width: 40rem;
+      height: 30rem;
+      border-radius: 5px;
+    }
+    .gallery__images {
+      @include margin(20px, 10px);
+      .active__img {
+        border: 2px solid $primaryColor;
+      }
+      img {
+        width: 10rem;
+        border-radius: 8px;
+        @include padding(5px, 5px);
+        cursor: pointer;
+      }
+    }
+  }
+  .product__details__text {
+    .product__details__heading {
+      @include fontStyles(40px, 500, $primaryTextColor);
+    }
+    .product__details__desc {
+      @include margin(80px, 20px);
+      .desc {
+        width: 40%;
+        @include margin(50px, 30%);
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+    .profile__image {
+      margin-top: 30px;
+
+      img {
+        min-width: 4rem;
+        max-width: 4rem;
+        min-height: 4rem;
+        max-height: 4rem;
+        border-radius: 100%;
+        background-color: $primaryColor;
+        padding: 2px;
+      }
+    }
+  }
+}
