@@ -1,0 +1,455 @@
+@import "../custom styles/variables";
+
+// HTML body Styles
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+  margin-left: 0px;
+}
+
+// Navbar
+
+.navbar {
+  width: 94%;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top: 0%;
+  background: #efeff1;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.06);
+  @include padding(5px, 40px);
+  .navbar__logo {
+    display: flex;
+    .navbar__logo__text {
+      margin-left: 4px;
+      margin-top: -6px;
+      color: $primaryColor;
+      .navbar__logo__heading {
+        margin-bottom: -5px;
+        font-weight: 600;
+      }
+      .navbar__logo__desc {
+        margin-left: 3px;
+        margin-top: 3px;
+        @include fontStyles(12px, 500, inherit);
+      }
+    }
+  }
+  .navbar__links {
+    a {
+      @include margin(auto, 15px);
+      color: $secondaryTextColor $primaryTextColor;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: $primaryTextColor;
+      }
+    }
+    .navbar__login__btn {
+      background-image: $linearButton;
+      color: $white;
+      &:hover {
+        background-image: $hoverLinearButton;
+      }
+    }
+    .navbar__signup__btn {
+      background-image: $hoverLinearButton;
+      color: $white;
+      &:hover {
+        background-image: $linearButton;
+      }
+    }
+  }
+}
+
+// Hero Section
+
+.hero {
+  text-align: center;
+  height: 90vh;
+  background-image: url(../../content/images/img6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  @include margin(100px, default);
+  .hero__content {
+    position: relative;
+    left: 3%;
+    top: 25%;
+    .hero__text {
+      .hero__heading {
+        @include fontStyles(40px, 700, $primaryTextColor);
+        margin-top: 100px;
+        width: fit-content;
+        margin: auto;
+        background-color: $white;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+    }
+    .hero__buttons {
+      margin-top: 100px;
+    }
+    .hero__button__2 {
+      background-color: $white;
+      margin-left: 30px;
+      &:hover {
+        background-color: rgb(240, 240, 240);
+      }
+    }
+  }
+  .hero__search__section {
+    width: 85%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 35px;
+    @include flex(space-between, center);
+    .search__section {
+      .select__box {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: $primaryColor;
+        width: 11rem;
+      }
+    }
+    .search__button {
+      background-color: $primaryColor;
+      color: $white;
+    }
+  }
+}
+
+// Properties
+
+.properties {
+  @include margin(10px, 10px);
+  @include padding(10px, 10px);
+  .properties__text {
+    text-align: center;
+    .properties__heading {
+      @include fontStyles(40px, 600, $primaryTextColor);
+    }
+    .properties__desc {
+      @include fontStyles(20px, auto, default);
+    }
+  }
+  .properties__grid {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 23rem 23rem 23rem;
+    grid-column-gap: 50px;
+    margin-left: 10px;
+    .grid__img {
+      width: 100%;
+      height: 20rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-align: start;
+      color: $white;
+      .properties__img__heading {
+        margin-left: 10px;
+        padding-top: 0px;
+        margin-top: 0px;
+        text-shadow: 4px 3px 5px $secondaryTextColor;
+      }
+      .properties__img__listening {
+        margin-top: 0px;
+        margin-left: 10px;
+        background-color: $white;
+        color: $primaryTextColor;
+        width: fit-content;
+        @include padding(4px, 8px);
+        border-radius: 7px;
+      }
+    }
+    .grid__img1 {
+      background-image: url(../../content/images/img6.jpg);
+    }
+    .grid__img2 {
+      background-image: url(../../content/images/img7.jpg);
+    }
+    .grid__img3 {
+      background-image: url(../../content/images/img3.png);
+    }
+  }
+
+  .properties__grid2 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 40px;
+    margin-top: 30px;
+    .grid2__img {
+      width: 100%;
+      height: 25rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-align: start;
+      color: $white;
+    }
+    .properties__img__heading {
+      margin-left: 10px;
+      padding-top: 0px;
+      margin-top: 0px;
+      color: $primaryTextColor;
+    }
+    .properties__img__listening {
+      margin-top: 0px;
+      margin-left: 10px;
+      background-color: $white;
+      color: $primaryTextColor;
+      width: fit-content;
+      @include padding(4px, 8px);
+      border-radius: 7px;
+    }
+    .grid2__img1 {
+      background-image: url(../../content/images/img10.jpg);
+    }
+    .grid2__img2 {
+      background-image: url(../../content/images/img11.jpg);
+    }
+  }
+}
+
+// Property Cards
+
+.properties__cards {
+  text-align: center;
+  background-color: $primaryBg;
+  @include margin(20px, 10px);
+  @include padding(20px, 10px);
+  .properties__cards__text {
+    text-align: center;
+    .properties__cards__heading {
+      @include fontStyles(40px, 600, $primaryTextColor);
+    }
+    .properties__cars__desc {
+      @include fontStyles(20px, auto, default);
+    }
+  }
+  .property__cards {
+    @include flex(center, center);
+    gap: 60px;
+    .property__card {
+      text-align: start;
+      width: 22%;
+      @include padding(20px, 20px);
+      background-color: $white;
+      border-radius: 10px;
+      .property__card__link {
+        text-decoration: none;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+// Home Cards
+
+.home__cards {
+  @include margin(10px, 10px);
+  @include padding(20px, 10px);
+  .home__cards__heading {
+    @include fontStyles(40px, 600, $primaryTextColor);
+    text-align: center;
+  }
+  .cards {
+    @include flex(space-around, center);
+    flex-wrap: wrap;
+    gap: 80px 10px;
+    .card {
+      width: 43%;
+      height: 18rem;
+      text-decoration: none;
+      @include flex(space-between, start);
+      @include padding(auto, 10px);
+      box-shadow: 0.3px 0.4px 2px 0.1px $secondaryTextColor;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        box-shadow: 0.2px 0.2px 0.2px 0.1px $secondaryTextColor;
+      }
+      img {
+        width: 60%;
+        height: 90%;
+        border-radius: 0px;
+      }
+      .card__content {
+        margin-top: 0px;
+        .card__heading {
+          @include fontStyles(18px, 600, $primaryTextColor);
+          @include padding(10px, inherit);
+        }
+        .card__price {
+          @include fontStyles(auto, 500, $primaryColor);
+        }
+        .card__details {
+          margin-top: 20px;
+          .card__detail {
+            @include flex(flex-start, start);
+            @include margin(12px, default);
+            img {
+              width: 20px;
+              display: inline-flex;
+            }
+            figcaption {
+              display: inline-flex;
+              color: rgb(138, 137, 137);
+              font-size: 14px;
+            }
+          }
+          .profile__img {
+            min-width: 44px;
+            max-width: 45px;
+            max-height: 45px;
+            min-height: 44px;
+            border-radius: 100%;
+            margin-left: 40px;
+            margin-top: 15px;
+            padding: 2px;
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Rent Properties
+
+.gallery__cards {
+  @include margin(15px, default);
+  @include padding(15px, 20px);
+  .gallery__cards__text {
+    .gallery__cards__heading {
+      text-align: center;
+      @include fontStyles(40px, 500, $primaryTextColor);
+    }
+  }
+  .gallery__cards__items {
+    @include flex(space-between, center);
+    gap: 15px 30px;
+    @include margin(30px, 50px);
+    .gallery__card {
+      width: 30%;
+      height: 22rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      border-radius: 10px;
+      .card__details {
+        position: absolute;
+        bottom: 5px;
+        left: 20%;
+        @include fontStyles(14px, 500, $white);
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+    .gallery__card1 {
+      background-image: url(../../content/images/img12.jpg);
+    }
+    .gallery__card2 {
+      background-image: url(../../content/images/img17.jpg);
+    }
+    .gallery__card3 {
+      background-image: url(../../content/images/img11.jpg);
+    }
+  }
+}
+
+// Contact Us Form
+
+.contact__us {
+  background-color: $primaryBg;
+  @include margin(20px, 5px);
+  @include padding(10px, 20px);
+  text-align: center;
+  .contact__us__heading {
+    @include fontStyles(40px, 500, $primaryTextColor);
+  }
+  .contact__us__desc {
+    color: $secondaryTextColor;
+  }
+  .contact__us__form {
+    text-align: start;
+    width: 60%;
+    background-color: $white;
+    @include padding(20px, 20px);
+    border-radius: 10px;
+    margin: auto;
+    .form__input {
+      width: 45%;
+      display: inline-block;
+      margin-right: 4px;
+    }
+    .email__input {
+      width: 95%;
+    }
+    .form__textarea {
+      @include padding(5px, 7px);
+      border: none;
+      outline: 1px solid $secondaryTextColor;
+      border-radius: 4px;
+      &:focus {
+        border: none;
+        outline: 1px solid $primaryColor;
+      }
+    }
+    .submit__button {
+      margin-top: 20px;
+      margin-left: 35%;
+      width: 25%;
+      background-color: $primaryColor;
+      color: $white;
+      &:hover {
+        background-color: $btnHoverEffect;
+      }
+    }
+  }
+}
+
+// Footer
+
+.footer {
+  @include margin(20px, 10px);
+  @include padding(10px, 20px);
+  gap: 20px 40px;
+  @include flex(space-between, start);
+  .footer__heading {
+    @include fontStyles(22px, 500, default);
+  }
+  .contact__details {
+    .contact__details__heading {
+      @include fontStyles(24px, 500, default);
+    }
+  }
+  .social__logos {
+    img {
+      background-color: rgb(230, 230, 230);
+      width: 25px;
+      padding: 7px;
+      border-radius: 5px;
+      @include margin(5px, 6px);
+      cursor: pointer;
+    }
+  }
+  .footer__item {
+    .footer__links {
+      a {
+        @include margin(20px, 10px);
+        display: block;
+      }
+    }
+  }
+}
