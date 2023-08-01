@@ -1,0 +1,50 @@
+@import "../custom\ styles/variables";
+
+.host {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primaryBg;
+  @include padding(5px, 20px);
+  text-align: center;
+  .host__div {
+    width: 50%;
+    background-color: $white;
+    @include margin(30px, auto);
+    @include padding(10px, 10px);
+    border-radius: 10px;
+    .host__heading {
+      @include fontStyles(26px, 600, $primaryTextColor);
+    }
+    .host__form {
+      @include margin(10px, auto);
+      @include padding(20px, 20px);
+      text-align: start;
+      @include margin(20px, default);
+      .input__label {
+        margin-left: 7%;
+        display: block;
+        line-height: 8px;
+        margin-top: 20px;
+      }
+      .form__input {
+        margin-left: 7%;
+        width: 80%;
+      }
+      button[type="submit"] {
+        // margin-left: 32%;
+        width: 30%;
+        margin: 10px 3% 20px 32%;
+      }
+      .host__type {
+        text-align: center;
+        @include margin(10px, 20px);
+      }
+      .file__input {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 30%;
+      }
+    }
+  }
+}
