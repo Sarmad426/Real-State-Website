@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Login with Your account to purchase homes for rent and good."
+    />
+    <meta name="keywords" content="Login, Homes for rent" />
+    <link rel="icon" type="image/svg" href="../../content/logos/app logo.svg" />
+    <link rel="stylesheet" href="../../styles/login/login.css" />
+    <title>Login to REIS</title>
+  </head>
+
+  <body>
+    <main class="login">
+      <div class="login__div">
+        <h2 class="login__heading">Login With</h2>
+        <div class="social__logos">
+          <img src="../../content/logos/google.jpg" alt="Google" />
+          <img src="../../content/logos/facebook.png" alt="Google" />
+        </div>
+        <form method="post" class="login__form">
+          <label for="email" class="input__label bold">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            class="form__input"
+            required
+            autocomplete="off"
+          />
+
+          <label for="password" class="input__label bold">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            class="form__input"
+            required
+            minlength="8"
+          />
+          <button type="submit" class="linear__btn2">Login</button>
+          <div class="login__text">
+            <span> Don't have an account. </span>
+            <a href="../signup/signup.html">Create Account</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
