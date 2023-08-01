@@ -1,0 +1,53 @@
+@import "../custom\ styles/variables";
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primaryBg;
+  @include padding(20px, 20px);
+  text-align: center;
+  .signup__div {
+    width: 50%;
+    background-color: $white;
+    @include margin(50px, auto);
+    @include padding(10px, 10px);
+    border-radius: 10px;
+
+    .signup__heading {
+      @include fontStyles(26px, 600, $primaryTextColor);
+    }
+    .social__logos {
+      img {
+        width: 50px;
+        border-radius: 100px;
+        cursor: pointer;
+        @include margin(auto, 20px);
+      }
+    }
+    .signup__form {
+      @include margin(10px, auto);
+      @include padding(20px, 20px);
+      text-align: start;
+      @include margin(20px, default);
+      .input__label {
+        margin-left: 7%;
+        display: block;
+        line-height: 8px;
+        margin-top: 20px;
+      }
+      .form__input {
+        margin-left: 7%;
+        width: 80%;
+      }
+      button[type="submit"] {
+        // margin-left: 32%;
+        width: 30%;
+        margin: 10px 3% 20px 32%;
+      }
+      .signup__text {
+        text-align: center;
+        @include margin(50px, default);
+      }
+    }
+  }
+}
